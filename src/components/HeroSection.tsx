@@ -1,23 +1,26 @@
-
-
 "use client";
 import React from "react";
 import { Boxes } from "./ui/background-boxes";
+import { FlipWords } from "./ui/flip-words";
 import { cn } from "@/lib/utils";
 
+
+
 export function HeroSection() {
+
+  const words = ["Vaibhav", "an engineer", "a researcher", "a dog lover", "a coffee addict"];
+
   return (
     <div className="h-[45.5rem] relative w-full overflow-hidden bg-black flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
       <Boxes />
-      <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
-        Tailwind is Awesome
-      </h1>
-      <p className="text-center mt-2 text-neutral-300 relative z-20">
-        Framer motion is the best animation library ngl
-      </p>
-    </div> 
+      <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 z-20">
+         Hello, I am
+        <FlipWords words={words} /> <br />
+         check out my resume
+      </div>
+    </div>
   );
 }
 
