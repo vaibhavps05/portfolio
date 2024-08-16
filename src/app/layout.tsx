@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+// import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +23,7 @@ export default function RootLayout({
           <Navbar />
         </div>
         {children}
-        <div >
-        <footer className="bg-zinc-50 text-center dark:bg-black lg:text-left mb-0">
-          <div className="bg-black/5 p-4 text-center text-surface dark:text-neutral-400">
-          Inspired by dank memes and big dreams :') <br /><br />
-            © Vaibhav Pratap Singh 2023
-          </div>
-        </footer>
-        </div>
+        {/* <Footer/> */}
       </body>
     </html>
   );
