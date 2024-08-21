@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { cn } from "@/lib/utils";
-import { Spotlight } from "@/components/ui/Spotlight";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { div } from "three/webgpu";
@@ -176,10 +176,6 @@ export function experience() {
   return (
     <div>
       <div className="flex items-center justify-center font-roboto my-40 text-neutral-400">
-      <Spotlight
-        className="-top-10 left-0 md:left-60 md:-top-20"
-        fill="white"
-      />
         <div>
         <h1 className="text-3xl py-4">
           Hello World!!
@@ -200,6 +196,9 @@ export function experience() {
           </div>
       </div>
     </div> 
+    
+    <ShootingStars />
+      <StarsBackground />
     </div>  
   );
 }
