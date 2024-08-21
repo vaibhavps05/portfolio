@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import { cn } from "@/lib/utils";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { div } from "three/webgpu";
@@ -10,7 +12,7 @@ const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World)
 
 export function experience() {
   const globeConfig = {
-    pointSize: 1,
+    pointSize: 0.0001,
     globeColor: "#171717",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
@@ -29,7 +31,7 @@ export function experience() {
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
-    autoRotateSpeed: 0.5,
+    autoRotateSpeed: 0.7,
   };
   const colors = ["#404040", "#525252", "#737373"];
   const sampleArcs = [
@@ -174,6 +176,10 @@ export function experience() {
   return (
     <div>
       <div className="flex items-center justify-center font-roboto my-40 text-neutral-400">
+      <Spotlight
+        className="-top-10 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
         <div>
         <h1 className="text-3xl py-4">
           Hello World!!
