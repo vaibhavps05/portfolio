@@ -177,9 +177,14 @@ export function experience() {
     <div>
       <div className="flex items-center justify-center font-roboto my-40 text-neutral-400">
         <div>
-        <h1 className="text-3xl py-4">
-          Hello World!!
+          <div className="flex items-center justify-between">
+          <h1 className="text-3xl py-4">
+          IIT Delhi | ML Research Intern
         </h1>
+        <h1 className="text-xl py-4 italic">
+          June 2024 - Present
+        </h1>
+          </div>
         <ul>
         <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
         <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
