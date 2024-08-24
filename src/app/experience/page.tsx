@@ -10,7 +10,7 @@ const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World)
   ssr: false,
 });
 
-export function experience() {
+export default function experience() {
   const globeConfig = {
     pointSize: 0.0001,
     globeColor: "#171717",
@@ -215,5 +215,3 @@ export function experience() {
     </div>  
   );
 }
-
-export default experience

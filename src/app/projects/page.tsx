@@ -53,7 +53,7 @@ const content = [
     ),
   },
 ];
-export function projects() {
+export default function projects() {
   return (
     <div className="w-full h-[45rem] my-0">
       <StickyScroll content={content} />
@@ -68,5 +68,3 @@ export function projects() {
     </div>
   );
 }
-
-export default projects
