@@ -6,9 +6,12 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { div } from "three/webgpu";
 
-const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
-  ssr: false,
-});
+const World = dynamic(
+  () => import("@/components/ui/globe").then((m) => m.World),
+  {
+    ssr: false,
+  }
+);
 
 export default function page() {
   const globeConfig = {
@@ -170,48 +173,69 @@ export default function page() {
       arcAlt: 0.2,
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
-    
   ];
 
   return (
     <div>
       <div className="flex items-center justify-center font-roboto my-40 text-neutral-400">
         <div>
-          <div className="flex items-center justify-between">
-          <h1 className="text-3xl py-4">
-          IIT Delhi | ML Research Intern
-        </h1>
-        <h1 className="text-xl py-4 italic">
-          June &apos;24 - Present
-        </h1>
+          <div className="flex items-center justify-between py-4">
+            <h1 className="text-3xl">IIT Delhi | ML Research Intern</h1>
+            <h1 className="text-xl italic">June &apos;24 - Present</h1>
           </div>
-        <ul>
-        <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
-        <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
-        <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
-        <li> • Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam in justo maximus vehicula. Mauris egestas condimentum ipsum vitae hendrerit.</li>
-        </ul>
+          <div className="px-10 font-roboto">
+          <ul className="list-outside list-disc space-y-3 font-roboto">
+            <li>
+              {" "}
+              Created application <span className="font-extrabold">feature-based engagement data cubes </span>
+              for multiple features and time series measures, <span className="font-extrabold">enhancing data
+              analysis</span> capabilities. 
+            </li>
+            <li>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              eget diam in justo maximus vehicula. Mauris egestas condimentum
+              ipsum vitae hendrerit.
+            </li>
+            <li>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              eget diam in justo maximus vehicula. Mauris egestas condimentum
+              ipsum vitae hendrerit.
+            </li>
+            <li>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              eget diam in justo maximus vehicula. Mauris egestas condimentum
+              ipsum vitae hendrerit.
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
-      <div className="flex items-center justify-center absolute -left-5 top-64 md:top-40 w-full h-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-          <div className="absolute w-full h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
+      <div className="flex items-center justify-center absolute -left-5 top-[30rem] md:top-[10rem] w-full h-full">
+        <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
+          <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+          <div className="absolute w-full h-[20rem] md:h-full z-10 ">
+            <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
+        </div>
       </div>
-    </div> 
-    
-    <ShootingStars />
+
+      <ShootingStars />
       <StarsBackground />
-      <footer className="w-full pt-20 -pb-20 md:pb-10" id="contact">
-      <div className="flex mt-56 md:flex-row flex-col justify-center items-center text-neutral-600">
-        <div className="md:text-base text-sm md:font-normal font-light">
-          <p>Inspired by dank memes and dreams</p><br />
-        <p> © 2024 Vaibhav Pratap Singh</p>
+      <footer
+        className="w-full pt-[60%] md:pt-36 -pb-[30rem] md:pb-10"
+        id="contact"
+      >
+        <div className="flex mt-56 md:flex-row flex-col justify-center items-center text-neutral-600">
+          <div className="md:text-base text-sm md:font-normal font-light">
+            <p>Inspired by dank memes and dreams</p>
+            <br />
+            <p> © 2024 Vaibhav Pratap Singh</p>
+          </div>
         </div>
-      </div>
-    </footer>
-    </div>  
+      </footer>
+    </div>
   );
 }
