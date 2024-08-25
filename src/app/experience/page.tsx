@@ -176,47 +176,67 @@ export default function page() {
   ];
 
   return (
-    <div>
-      <div className="flex items-center justify-center font-roboto my-40 text-neutral-400">
+    <div className="items-center justify-center">
+      <div className="flex items-center justify-center font-roboto my-32 text-neutral-400 w-[80%] mx-auto">
         <div>
           <div className="flex items-center justify-between py-4">
             <h1 className="text-3xl">IIT Delhi | ML Research Intern</h1>
             <h1 className="text-xl italic">June &apos;24 - Present</h1>
           </div>
           <div className="px-10 font-roboto">
-          <ul className="list-outside list-disc space-y-3 font-roboto">
-            <li>
-              {" "}
-              Created application <span className="font-extrabold">feature-based engagement data cubes </span>
-              for multiple features and time series measures, <span className="font-extrabold">enhancing data
-              analysis</span> capabilities. 
-            </li>
-            <li>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget diam in justo maximus vehicula. Mauris egestas condimentum
-              ipsum vitae hendrerit.
-            </li>
-            <li>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget diam in justo maximus vehicula. Mauris egestas condimentum
-              ipsum vitae hendrerit.
-            </li>
-            <li>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              eget diam in justo maximus vehicula. Mauris egestas condimentum
-              ipsum vitae hendrerit.
-            </li>
-          </ul>
+            <ul className="list-outside list-disc space-y-1 font-roboto tracking-wide">
+              <li>
+                {" "}
+                Conducted research on{" "}
+                <span className="font-extrabold">
+                  mental health among gamers
+                </span>
+                , optimizing deep neural networks to handle imbalanced datasets,
+                under the supervision of{" "}
+                <span className="font-extrabold">
+                  Professor Tapan Kumar Gandhi
+                </span>
+                .
+              </li>
+              <li>
+                {" "}
+                Created application{" "}
+                <span className="font-extrabold">
+                  feature-based engagement data cubes{" "}
+                </span>
+                for multiple features and time series measures,{" "}
+                <span className="font-extrabold">enhancing data analysis</span>{" "}
+                capabilities.
+              </li>
+              <li>
+                {" "}
+                Analyzed a dataset on the prevalence of self-reported{" "}
+                <span className="font-extrabold">insomnia,</span> excessive{" "}
+                <span className="font-extrabold">daytime sleepiness,</span>
+                <span className="font-extrabold">
+                  {" "}
+                  anxiety, depression,
+                </span>{" "}
+                and gaming disorder among gamers, utilizing the Game Addiction
+                Scale Short Form for assessment.
+              </li>
+              <li>
+                {" "}
+                We utilized various classification methods, including Support
+                Vector Machine (SVM), Gaussian Naive Bayes (GNB), Random Forest
+                (RF), Adaptive Boosting (AdaBoost), Decision Tree (DT), XGBoost,
+                and Gradient Boosting (GB). In our study,{" "}
+                <span className="font-extrabold">Adaptive Boosting</span>{" "}
+                demonstrated superior performance compared to the other methods.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center absolute -left-5 top-[30rem] md:top-[10rem] w-full h-full">
+      <div className="flex items-center justify-center absolute -left-5 top-[100%] md:top-[15rem] w-full h-full">
         <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
           <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-          <div className="absolute w-full h-[20rem] md:h-full z-10 ">
+          <div className="absolute w-full h-[20rem] md:h-full md:z-10 -z-10">
             <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
         </div>
