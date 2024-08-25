@@ -182,7 +182,7 @@ export default function page() {
           IIT Delhi | ML Research Intern
         </h1>
         <h1 className="text-xl py-4 italic">
-          June 2024 - Present
+          June &apos;24 - Present
         </h1>
           </div>
         <ul>
@@ -205,7 +205,7 @@ export default function page() {
     <ShootingStars />
       <StarsBackground />
       <footer className="w-full pt-20 -pb-20 md:pb-10" id="contact">
-      <div className="flex mt-56 md:flex-row flex-col justify-center items-center text-neutral-400">
+      <div className="flex mt-56 md:flex-row flex-col justify-center items-center text-neutral-600">
         <div className="md:text-base text-sm md:font-normal font-light">
           <p>Inspired by dank memes and dreams</p><br />
         <p> © 2024 Vaibhav Pratap Singh</p>

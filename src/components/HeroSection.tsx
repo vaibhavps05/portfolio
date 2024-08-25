@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Boxes } from "./ui/background-boxes";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { FlipWords } from "./ui/flip-words";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,15 @@ export function HeroSection() {
          Hello, I am
         <FlipWords words={words} /> <br />
          check out my resume
+      </div>
+      <div className="mt-10">
+      <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className="dark:bg-black dark:text-white flex items-center space-x-2 "
+      >
+        <a href="https://drive.google.com/file/d/1qIkv2tHAro_i94NqWefT85bMCw9QYqiN/view?usp=sharing">Resume</a>
+      </HoverBorderGradient>
       </div>
     </div>
     </div>
