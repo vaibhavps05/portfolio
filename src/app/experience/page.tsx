@@ -200,16 +200,6 @@ export default function page() {
               </li>
               <li>
                 {" "}
-                Created application{" "}
-                <span className="font-extrabold">
-                  feature-based engagement data cubes{" "}
-                </span>
-                for multiple features and time series measures,{" "}
-                <span className="font-extrabold">enhancing data analysis</span>{" "}
-                capabilities.
-              </li>
-              <li>
-                {" "}
                 Analyzed a dataset on the prevalence of self-reported{" "}
                 <span className="font-extrabold">insomnia,</span> excessive{" "}
                 <span className="font-extrabold">daytime sleepiness,</span>
@@ -219,6 +209,16 @@ export default function page() {
                 </span>{" "}
                 and gaming disorder among gamers, utilizing the Game Addiction
                 Scale Short Form for assessment.
+              </li>
+              <li>
+                {" "}
+                Created application{" "}
+                <span className="font-extrabold">
+                  feature-based engagement data cubes{" "}
+                </span>
+                for multiple features and time series measures,{" "}
+                <span className="font-extrabold">enhancing data analysis</span>{" "}
+                capabilities.
               </li>
               <li>
                 {" "}

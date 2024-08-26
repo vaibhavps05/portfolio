@@ -41,28 +41,31 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
+    "linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
+    "linear-gradient(to bottom, var(--black), var(--sky-950))",
+    "linear-gradient(to bottom, var(--black), var(--indigo-950))",
   ];
+
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
 
+  const combinedBackgrounds = [...backgroundColors, ...linearGradients];
+
   const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0]
+    combinedBackgrounds[0]
   );
 
   useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
+    setBackgroundGradient(combinedBackgrounds[activeCard % combinedBackgrounds.length]);
   }, [activeCard]);
 
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        background: backgroundGradient,
       }}
       className="h-[58rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 py-[10rem]"
       ref={ref}
