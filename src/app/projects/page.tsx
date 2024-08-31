@@ -1,57 +1,74 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import Image from "next/image";
 
 const content = [
   {
-    title: "Project 1",
+    title: "Book Recommendation System",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper purus neque, a scelerisque tellus sollicitudin non. Sed luctus pharetra dignissim. Ut in enim et felis convallis feugiat. Nulla condimentum ut augue a egestas. Vivamus sagittis tincidunt tortor, ut ultricies urna feugiat at. Quisque convallis malesuada turpis eu vestibulum. Donec vitae odio maximus, pulvinar nunc nec, tincidunt urna. Morbi et tincidunt lectus, vel maximus erat. Fusce id pulvinar libero. ",
+      "This project involves developing a book recommendation system that uses the K-Nearest Neighbor (KNN) algorithm and collaborative filtering. By analyzing clickstream data and using Euclidean distance, the system generates fast and personalized book recommendations. The model powers a website where users receive relevant book suggestions based on their search queries, demonstrating the system's ability to improve the book discovery process through precise and personalized recommendations.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/pop-img.jpg"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
+          src="/bookrec.png"
+          width={900}
+          height={900}
+          className="h-full w-[100%] object-cover"
+          alt="Book Recommendation System"
         />
       </div>
     ),
   },
   {
-    title: "Project 2",
+    title: "Olympic Analyser",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper purus neque, a scelerisque tellus sollicitudin non. Sed luctus pharetra dignissim. Ut in enim et felis convallis feugiat. Nulla condimentum ut augue a egestas. Vivamus sagittis tincidunt tortor, ut ultricies urna feugiat at. Quisque convallis malesuada turpis eu vestibulum. Donec vitae odio maximus, pulvinar nunc nec, tincidunt urna. Morbi et tincidunt lectus, vel maximus erat. Fusce id pulvinar libero. ",
+      "Developed a Streamlit dashboard application in Python to analyze and visualize data from all Olympic Games. The dashboard provides detailed statistics, including country-wise, player-wise, and sports-wise metrics. It features interactive graphs that help users explore trends, medal counts, and performance insights. Additionally, the application includes features that allow users to filter data and delve into specific data points for a more thorough analysis. The interactive web application offers a user-friendly interface, enabling a deeper understanding of Olympic Data.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/pop-img.jpg"
-          width={300}
-          height={300}
+          src="/olympic.png"
+          width={900}
+          height={900}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="Olympic Analyser"
         />
       </div>
     ),
   },
   {
-    title: "Project 3",
+    title: "T20 World Cup 2022 Analysis",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper purus neque, a scelerisque tellus sollicitudin non. Sed luctus pharetra dignissim. Ut in enim et felis convallis feugiat. Nulla condimentum ut augue a egestas. Vivamus sagittis tincidunt tortor, ut ultricies urna feugiat at. Quisque convallis malesuada turpis eu vestibulum. Donec vitae odio maximus, pulvinar nunc nec, tincidunt urna. Morbi et tincidunt lectus, vel maximus erat. Fusce id pulvinar libero. ",
-    content: (
+      "Created an interactive Power BI dashboard to thoroughly analyze T20 World Cup 2022 data, focusing on both match and player statistics. The project involved processing and transforming raw sports data into meaningful insights, emphasizing key trends, performance metrics, and comparisons throughout the tournament. The project was showcased in a video presentation, where the process of data analysis and the techniques used for effective visualization were demonstrated.",
+      content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/pop-img.jpg"
-          width={300}
-          height={300}
+          src="/t20.png"
+          width={900}
+          height={900}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="T20 World Cup 2022 Analysis"
         />
       </div>
     ),
   },
+  {
+    title: "Fake News Detection",
+    description:
+      "Developed a model to classify news as REAL or FAKE using TfidfVectorizer, which converts text into numeric form while emphasizing key terms. The model was trained with a Passive Aggressive Classifier on this vectorized data, enabling it to detect patterns distinguishing real news from fake news. The performance of the model was evaluated, achieving an accuracy rate of 92.82%, and was supported by a thorough analysis using a confusion matrix to assess its effectiveness.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="/fake.jpg"
+          width={900}
+          height={900}
+          className="h-full w-full object-cover"
+          alt="Fake News Detection"
+        />
+      </div>
+    ),
+  }
 ];
 export default function projects() {
   return (

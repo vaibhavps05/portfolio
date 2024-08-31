@@ -44,6 +44,7 @@ export const StickyScroll = ({
     "linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
     "linear-gradient(to bottom, var(--black), var(--sky-950))",
     "linear-gradient(to bottom, var(--black), var(--indigo-950))",
+    "linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
   ];
 
   const linearGradients = [
@@ -67,11 +68,11 @@ export const StickyScroll = ({
       animate={{
         background: backgroundGradient,
       }}
-      className="h-[58rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 py-[10rem]"
+      className="h-[58rem] overflow-y-auto flex justify-center relative space-x-20 rounded-md p-10 py-[10rem]"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
-        <div className="max-w-5xl">
+        <div className="max-w-[50rem]">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-48">
               <motion.h2
@@ -104,7 +105,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-64 w-96 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-64 w-[30rem] rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
