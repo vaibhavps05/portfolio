@@ -63,9 +63,9 @@ export default function Home() {
         </div>
       </div>
       <footer className="w-full pt-10 md:pt-0 pb-10" id="contact">
-      <div className="flex mt-[60rem] md:mt-[8rem] md:flex-row flex-col justify-center items-center text-neutral-600">
+      <div className="flex mt-[60rem] md:mt-[12rem] md:flex-row flex-col justify-center items-center text-neutral-600">
         <div className="md:text-base text-sm md:font-normal font-light">
-          <p>Inspired by dank memes and dreams</p><br />
+          {/* <p>Inspired by dank memes and dreams</p><br /> */}
         <p> © 2024 Vaibhav Pratap Singh</p>
         </div>
       </div>

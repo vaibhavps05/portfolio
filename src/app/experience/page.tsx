@@ -233,7 +233,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center absolute -left-5 top-[100%] md:top-[15rem] w-full h-full">
+      <div className="flex items-center justify-center absolute -left-5 top-[100%] md:top-[20rem] w-full h-full">
         <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
           <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
           <div className="absolute w-full h-[20rem] md:h-full md:z-10 -z-10">
@@ -250,8 +250,8 @@ export default function page() {
       >
         <div className="flex mt-56 md:flex-row flex-col justify-center items-center text-neutral-600">
           <div className="md:text-base text-sm md:font-normal font-light">
-            <p>Inspired by dank memes and dreams</p>
-            <br />
+            {/* <p>Inspired by dank memes and dreams</p>
+            <br /> */}
             <p> © 2024 Vaibhav Pratap Singh</p>
           </div>
         </div>
