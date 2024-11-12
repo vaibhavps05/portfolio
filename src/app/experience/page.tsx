@@ -181,7 +181,7 @@ export default function page() {
         <div>
           <div className="flex items-center justify-between py-4">
             <h1 className="text-3xl">IIT Delhi | ML Research Intern</h1>
-            <h1 className="text-xl italic">June &apos;24 - Present</h1>
+            <h1 className="text-xl italic">May &apos;24 - October &apos;24</h1>
           </div>
           <div className="px-10 font-roboto">
             <ul className="list-outside list-disc space-y-1 font-roboto tracking-wide">
@@ -191,43 +191,43 @@ export default function page() {
                 <span className="font-extrabold">
                   mental health among gamers
                 </span>
-                , optimizing deep neural networks to handle imbalanced datasets,
-                under the supervision of{" "}
+                , fine-tuning predictive models for imbalanced datasets, under {" "}
                 <span className="font-extrabold">
                   Professor Tapan Kumar Gandhi
                 </span>
+                ; research paper currently under review.
                 .
               </li>
               <li>
                 {" "}
-                Analyzed a dataset on the prevalence of self-reported{" "}
-                <span className="font-extrabold">insomnia,</span> excessive{" "}
-                <span className="font-extrabold">daytime sleepiness,</span>
+                Performed extensive {" "}
                 <span className="font-extrabold">
                   {" "}
-                  anxiety, depression,
+                  data cleaning and transformation{" "}
                 </span>{" "}
-                and gaming disorder among gamers, utilizing the Game Addiction
-                Scale Short Form for assessment.
+                to refine raw data, ensuring accuracy across health metrics for reliable analysis.
               </li>
               <li>
                 {" "}
-                Created application{" "}
+                Designed a streamlined {" "}
                 <span className="font-extrabold">
-                  feature-based engagement data cubes{" "}
+                ETL pipeline,{" "}
                 </span>
-                for multiple features and time series measures,{" "}
-                <span className="font-extrabold">enhancing data analysis</span>{" "}
-                capabilities.
+                boosting data handling{" "}
+                <span className="font-extrabold">efficiency by 30% </span>{" "}
+                and improving data collection workflows. 
               </li>
               <li>
                 {" "}
-                We utilized various classification methods, including Support
-                Vector Machine (SVM), Gaussian Naive Bayes (GNB), Random Forest
-                (RF), Adaptive Boosting (AdaBoost), Decision Tree (DT), XGBoost,
-                and Gradient Boosting (GB). In our study,{" "}
-                <span className="font-extrabold">Adaptive Boosting</span>{" "}
-                demonstrated superior performance compared to the other methods.
+                Optimized {" "}
+                <span className="font-extrabold">logistic regression and random forest</span>{" "}
+                models by adjusting hyper parameters for features like social phobia, etc.
+              </li>
+              <li>
+                {" "}
+                Presented insights on risk factors,{" "}
+                <span className="font-extrabold">offering data-driven </span>{" "}
+                mental health support recommendations for gamer communities.
               </li>
             </ul>
           </div>
