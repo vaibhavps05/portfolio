@@ -181,7 +181,7 @@ export default function page() {
         <div>
           <div className="flex items-center justify-between py-4">
             <h1 className="text-3xl">IIT Delhi | ML Research Intern</h1>
-            <h1 className="text-xl italic">May &apos;24 - October &apos;24</h1>
+            <h1 className="text-xl italic">June &apos;24 - November &apos;24</h1>
           </div>
           <div className="px-10 font-roboto">
             <ul className="list-outside list-disc space-y-1 font-roboto tracking-wide">

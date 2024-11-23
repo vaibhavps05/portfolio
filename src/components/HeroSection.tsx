@@ -28,7 +28,7 @@ export function HeroSection() {
         as="button"
         className="dark:bg-black dark:text-white flex items-center space-x-2 "
       >
-        <a href="https://drive.google.com/file/d/1tVdeF4IhQOXinuuyA2TXwv4hPcYHjdpD/view?usp=sharing">Resume</a>
+        <a href="https://drive.google.com/file/d/1wWN5X5HYn0FTSgl_UoVB7Skf8xsFDfSc/view?usp=sharing">Resume</a>
       </HoverBorderGradient>
       </div>
     </div>
